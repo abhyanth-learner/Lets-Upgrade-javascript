@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first webage</title>
+</head>
+<body>
+	
+	<h1>hello</h1>
+	<h2 id="demo">this is my first webpage</h2>
+	<script type="text/javascript">
+		// console command
+		alert("click me and you can see the contents")
+		console.warn("this is a warning") //gives us a warning
+		console.error("this is a error message")//gives us an error
+		console.assert(document.getElementById("demo"),"there is  no element called demo")//gets executed ony when the condition is false
+		console.log("hello i am used to print in the console")
+		console.group()//use to group the statements inside it
+		console.log("this is inside the group")
+		console.log("this is inside the group1")
+		console.log("this is inside the group2")
+		console.log("this is inside the group3")
+		console.groupEnd()
+		console.groupCollapsed()//use to group the statements inside it and its collapsed by default
+		console.log("this is inside the collapsed group")
+		console.log("this is inside the collapsed group1")
+		console.log("this is inside the collapsed group2")
+		console.log("this is inside the collapsed group3")
+		console.groupEnd()
+		console.info("this is also used to print ststements")//this also acts like a print statement
+		
+		console.time("Time taken:");
+		console.table(["hello","hai","whats up"])
+		//used to print the contents inside a table
+		var a={name:"abhyanth", age:"20",city:"manglore"};
+		var b={name:"anil",age:"25",city:"banglore"};
+		var c={name:"vishwas",age:"29",city:"mysore"};
+		console.table({a,b,c})//we can jalso give associated array in form of tabke it groups them
+		console.timeEnd("Time taken:")//gives us the time taken for that piece off code
+		console.clear()//used to clear the console
+
+
+
+
+		//var let and const difference
+		var a="abhyanth";
+		console.log(a)
+		a="jungle"//var datatype can be updated and its global in nature i.e it can be accessed anywhere
+		console.log(a)
+		{
+			let z=20
+			console.log(z)
+			z=30 //let also can be updated but its not global and can be accessed on inside the brackets
+			console.log(z)
+
+		}
+		// console.log(z) this gives an error as its not global
+		const pi=3.14 //const is constant and it cannot be updated 
+		console.log(pi)
+		// pi=3.14 this gives us an error
+
+
+
+		//datatpes in javascript
+		var s="abhi"//this is a string datatype
+		console.log(typeof(s))
+		var i=20//its a number datatype
+		console.log(typeof(i))
+		i=20.63836283487//this is also number datatype
+		console.log(typeof(i))
+		var l=[10,11,11,11,1,1,1,1,1,1,1,1,"hello"]//both are tpye objects
+		console.log(typeof(l))	
+		var d={hello:"ok",ssup:"not ok"}
+		console.log(typeof(d))
+		var h=undefined//the datatype itself undefined
+		console.log(typeof(h))	
+		h=null//now its an object 
+		console.log(typeof(h))
+		h=""//now its a string
+		console.log(typeof(h))
+		h=true//its a boolean datatype
+		console.log(typeof(h))
+		h=false
+		console.log(typeof(h))
+
+
+
+
+
+
+
+
+		
+	</script>
+
+</body>
+</html>
